@@ -1,3 +1,14 @@
+USAGE:
+>>>from speedometer import *
+>>>speedometer = Speedometer(
+>>>    MetricComposite(time=TimeMetric(), count=CountMetric())
+>>>)
+>>>speedometer.patch_object(obj, 'method')
+>>>obj.method()
+>>>stats = speedometer.pop_stats()
+>>>print stats.count, stats.time
+1 0.001
+
 TIPS:
-	For run tests on python < 2.7, you should install unittest2.
-	And use nose.
+    For run tests on python < 2.7, you should install unittest2.
+    And use nose.
