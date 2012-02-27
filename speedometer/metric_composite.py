@@ -26,7 +26,7 @@ class MetricComposite(object):
     def _get_results_dict(self):
         results = {}
         for name, metric in self.metrics_by_names.iteritems():
-            results[name] = metric.get_value()
+            results[name] = metric.get_results()
         return results
 
     def start(self):
